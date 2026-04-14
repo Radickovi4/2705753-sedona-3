@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владимир Абазов](https://up.htmlacademy.ru/htmlcss-individual/3/user/2705753).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Козюков](https://htmlacademy.ru/profile/id1119885).
 
 ---
 
