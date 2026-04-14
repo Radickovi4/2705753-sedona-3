@@ -2,7 +2,7 @@
 
 * Студент: [Владимир Абазов](https://up.htmlacademy.ru/htmlcss-individual/3/user/2705753).
 * Наставник: [Александр Козюков](https://htmlacademy.ru/profile/id1119885).
-
+*Сайт: [Мой сайт](https://radickovi4.github.io/2705753-sedona-3/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
