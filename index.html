@@ -6,156 +6,278 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="navigation">
-        <a class="navigatoin-logo" href="index.html">
-          <img class="header-page-logo" width="140" height="70"
+    <header class="navigation">
+      <a class="navigatoin-logo" href="index.html">
+          <img class="logo-site" width="140" height="70"
           src="images/icons/logo-main.svg"
           alt="Логотип города Седона">
         </a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-           <a class="navigation-link" href="#">Главная</a>
+        <nav class="nav">
+           <ul class="nav-list">
+          <li class="navigation-item current-link">
+           <a class="nav-list-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-           <a class="navigation-link" href="#">О Седоне</a>
+           <a class="nav-list-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-           <a class="navigation-link" href="catalog.html">Гостиницы</a>
+           <a class="nav-list-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+
+        <ul class="nav-list navigation-user">
           <li class="navigation-item">
-           <a class="navigation-link" href="#">
-            <img class="search-image" src="images/icons/search.svg" width="20" height="20" alt="иконка лупы">
-            <span class="visually-hidden">
-              Поиск
-            </span>
+           <a class="navigation-link-user search-icon" href="#">
+            <span class="visually-hidden"> Поиск</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z"
+                  fill="currentColor" />
+              </svg>
            </a>
           </li>
           <li class="navigation-item">
-           <a class="navigation-link" href="#">Избранное
-            <img class="favorites-image" src="images/icons/Vector.svg" height="20" width="20" alt="Избранное">
+           <a class="navigation-link-user favourite-icon" href="#">
+            <span class="visually-hidden">Избранное</span>
+             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.9 19C9.6 19 9.3 18.9 9.1 18.6C3.7 12.5 2.4 11.1 2.1 10.7C1.4 9.8 1 8.6 1 7.4C1 4.4 3.4 2 6.5 2C7.8 2 9 2.5 10 3.3C11 2.5 12.3 2 13.5 2C16.5 2 19 4.4 19 7.4C19 8.7 18.5 9.9 17.7 10.8L10.7 18.7C10.5 18.9 10.3 19 9.9 19ZM3.9 9.5C4.2 9.9 7.4 13.5 10 16.4L16.2 9.4C16.7 8.9 16.9 8.2 16.9 7.4C16.9 5.6 15.4 4.1 13.6 4.1C12.6 4.1 11.6 4.6 10.9 5.4C10.6 5.7 10.3 5.8 10 5.8C9.7 5.8 9.4 5.6 9.2 5.4C8.5 4.6 7.5 4.1 6.5 4.1C4.7 4.1 3.2 5.6 3.2 7.4C3.1 8.3 3.5 9 3.9 9.5C3.8 9.5 3.8 9.5 3.9 9.5Z"
+                  fill="currentColor" />
+              </svg>
+            <span class="favourite-number">12</span>
            </a>
+           </li>
+           <li class="navigation-item">
+             <button class="header-button" type="button"> Хочу сюда!</button>
           </li>
         </ul>
       </nav>
-    <a class="header-button" href="#">Хочу сюда!</a>
     </header>
-    <main class="main-index"
+
+    <main class="main-index">
      <section class="hero">
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-    <img class="logo" src="images/welcome.svg" alt="приветсвие сайта седона">
-    </section>
-    <section class="avantage-block">
-      <h2 class="section-block">Седона — небольшой городок в Аризоне,
+    <img class="logo" src="images/welcome.svg" width="458" height="352" alt="приветсвие сайта седона">
+     </section>
+    <section class="advantage-block">
+      <h2 class="header-block">Cедона — небольшой городок в Аризоне,
 заслуживающий большего!</h2>
-    <p class="description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+    <p class="description-block">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
-    <section class="avantages-block">
+
+    <section class="advantages">
       <h2 class="visually-hidden"> Преимущества</h2>
-      <ul class="avantages-list">
-        <li class="avantages-item">
-          <h3 class="avantages-heading"> Настоящий городок</h3>
+      <ul class="advantages-list">
+        <li class="advantages-item pictures">
+          <div class="advantages-text">
+          <h3 class="advantages-heading"> Настоящий<br> городок</h3>
           <p class="description">Седона- не аттракцион для туристова, там течёт твоя жизнь</p>
-          <img class="avantage-img" src="images/photo-1.jpg" alt="Город Седона" width="800" height="385">
+          </div>
+          <img class="advantages-img" src="images/photo-1.jpg" alt="Город Седона" width="800" height="385">
         </li>
-        <li class="avantages-item">
-          <h3 class="avantages-heading"> Небольшая площадь</h3>
+
+        <li class="advantages-item">
+          <h3 class="advantages-heading"> Небольшая<br> площадь</h3>
           <p class="description">Все достопримечательности находятся очень близко</p>
         </li>
-         <li class="avantages-item">
-          <h3 class="avantages-heading"> Красивая дорога</h3>
-          <p class="description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+
+         <li class="advantages-item light-blue">
+          <h3 class="advantages-heading"> Красивая<br> дорога</h3>
+          <p class="description description-color">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-         <li class="avantages-item">
-          <h3 class="avantages-heading"> Мало туристов</h3>
-          <p class="description">Большинство едет в Гранд Каньон и толпится там</p>
+
+         <li class="advantages-item">
+          <h3 class="advantages-heading"> Мало<br> туристов</h3>
+          <p class="description description-color">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
-        <li class="avantages-item">
-          <h3 class="avantages-heading"> Там есть мост дьявола</h3>
-          <p class="description">Все достопримечательности находятся очень близко</p>
-          <img class="avantage-img" src="images/photo-2.jpg" alt="Вид природы Седоны" width="800" height="385">
+
+        <li class="advantages-item pictures">
+          <img class="advantage-img" src="images/photo-2.jpg" alt="Вид природы Седоны" width="800" height="385">
+          <div class="advantages-text">
+          <h3 class="advantages-heading"> там есть<br> мост дьявола</h3>
+          <p class="description"> Все достопримечательности находятся очень близко</p>
+        </div>
         </li>
       </ul>
     </section>
-    <section class="avantages-block-invite">
+
+    <section class="advantages-block-invite">
       <h3 class="header-block-two"> Приезжайте в Седону отдохнуть в комфорте и уюте</h3>
       <p class="description"> Опытный персонал и качественное обслуживание!</p>
     </section>
     <div class="service">
      <ul class="service-list">
-       <li class="service-item">
-           <div class="service-block"></div>
+      <li class="service-item light-blue">
+      <div class="service-block">
            <img src="images/icons/hotels.svg" alt="Иконка дома" width="75" height="72">
            <h4 class="service-heading">Жильё</h4>
-           <p class=" description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+           <p class="description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
            </div>
        </li>
         <li class="service-item">
-           <div class="service-block"></div>
+           <div class="service-block">
            <img src="images/icons/food.svg" alt="иконка бургера" width="75" height="72">
            <h4 class="service-heading">Еда</h4>
-           <p class=" description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+           <p class=" description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
            </div>
        </li>
-        <li class="service-item">
-           <div class="service-block"></div>
+        <li class="service-item light-blue">
+           <div class="service-block">
            <img src="images/icons/souvenir.svg" alt="иконка подарка" width="75" height="72">
            <h4 class="service-heading">Сувениры</h4>
-           <p class=" description">Не только китайского, но и настоящего местного производства!</p>
+           <p class=" description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
            </div>
        </li>
       </ul>
+     </div>
        <section class="interested">
-        <h3 class="header-block-two">Заинтерисовались?</h3>
-        <p class="description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <h2 class="header-block-two">Заинтерисовались?</h2>
+        <p class="description-block">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button-search" href="#">Поиск гостиницы в Седоне</a>
        </section>
-       <section class="subscribe">
+
+       <section class="subscribe sub-img">
         <div class="subscribe-block">
-          <img src="images/subscribe.jpg" width="1200" height="414.86"
           <h2 class="header-block-two">Подпишитесь на рассылку</h2>
-          <p class="description" Только полезная информация и никакого спама, честной бойскаутское!</p>
-            <form class="subscribe-form" action="#" method="post">
-              <input class="subscribe-button" type="email" placeholder="Ваш e-mail">
+          <p class="description-block"> Только полезная информация и никакого спама, честной бойскаутское!</p>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="subscribe-field" type="email" required placeholder="Ваш e-mail">
               <button class="subscribe-button" type="submit">Подписаться</button>
             </form>
         </div>
        </section>
       </main>
+
       <footer class="main-footer">
-        <div class="social-container">
+          <div class="social-container">
           <ul class="social-list">
             <li class="social-item">
-              <a class="sicial-link" href="https://vk.com/htmlacademy" title="Группа вконтакте htmlacademy" target="_blank">
+              <a class="social-link social-icon" href="https://vk.com/htmlacademy" title="Группа вконтакте htmlacademy" target="_blank">
               <span class="visually-hidden">Ссылка для перехода в группу vk</span>
-              <img src="images/icons/VK-massanger.svg" alt="vk-icon" width="24" height="14">
+               <svg aria-hidden="true" focusable="false" width="24" height="14" viewBox="0 0 24 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z"
+                fill="currentColor" />
+            </svg>
             </a>
             </li>
+
             <li class="social-item">
-              <a class="sicial-link" href="https://t.me/htmlacademy" title="Группа telegramm htmlacademy" target="_blank">
+              <a class="social-link social-icon" href="https://t.me/htmlacademy" title="Группа telegramm htmlacademy" target="_blank">
               <span class="visually-hidden">Ссылка для перехода в группу tg</span>
-              <img src="images/icons/Telegramm.svg" alt="tg-icon" width="18" height="15.1">
+              <svg aria-hidden="true" focusable="false" width="18" height="16" viewBox="0 0 18 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.785 0.0992597L0.840489 6.24776C-0.247661 6.68481 -0.241365 7.29184 0.640845 7.56253L4.73445 8.83953L14.2058 2.8637C14.6537 2.59121 15.0629 2.7378 14.7265 3.03636L7.05283 9.96185H7.05103L7.05283 9.96275L6.77045 14.1823C7.18413 14.1823 7.36669 13.9925 7.59871 13.7686L9.58705 11.8351L13.7229 14.89C14.4855 15.31 15.0332 15.0941 15.2229 14.1841L17.9379 1.38885C18.2158 0.274623 17.5126 -0.229883 16.785 0.0992597Z"
+                fill="currentColor" />
+            </svg>
             </a>
             </li>
+
             <li class="social-item">
-              <a class="sicial-link" href="https://www.youtube.com/user/htmlacademyru" title="YouTube канал htmlacademy" target="_blank">
+              <a class="social-link social-icon" href="https://www.youtube.com/user/htmlacademyru" title="YouTube канал htmlacademy" target="_blank">
               <span class="visually-hidden">Ссылка для перехода на YouTube канал</span>
-              <img src="images/icons/yt-icon.svg" alt="yt-icon">
-            </a>
+              <svg aria-hidden="true" focusable="false" width="22" height="17" viewBox="0 0 22 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.607 0H3.17413C1.31343 0 0 1.59375 0 3.4V13.4937C0 15.4062 1.31343 17 3.17413 17H18.8259C20.4677 17 22 15.4062 22 13.6V3.4C21.7811 1.59375 20.4677 0 18.607 0ZM7.66169 12.5375V4.4625L14.995 8.5L7.66169 12.5375Z"
+                fill="currentColor" />
+            </svg>
+           </a>
             </li>
           </ul>
+
           <div class="footer-contact-number">
-            <a href="tel:88128121212" class="footer-number">+7 (812) 812-12-12</a>
+            <a href="tel:+78128121212" class="footer-number">+7 (812) 812-12-12</a>
           </div>
+
           <div class="footer-contact-logo">
-            <a class="footer-contact-logo-htmlacademy" href="https://up.htmlacademy.ru/profession/frontender-analog/2/htmlcss-individual/3"
-            <img class="contact-logo" src="images/icons/logo-academy.svg" alt="лого htmlacademy">
+            <a class="footer-contact-logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img class="contact-logo" src="images/icons/htmlacademy.svg" width="115" height="33" alt="лого htmlacademy">
             <span class="visually-hidden">Преход на сайт HTML academy</span>
             </a>
           </div>
         </div>
       </footer>
+
+      <div class="modal-container">
+        <div class="modal modal-search">
+           <button class="modal-close-button" type="button">
+        <span class="visually-hidden">Закрыть</span>
+       </button>
+       <section class="modal-search-content">
+        <h2 class="modal-search-title section-title"> Поиск гостиницы в седоне</h2>
+
+         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="modal-form-label" for="check-in-date">Дата Заезда:</label>
+          <div class="check-in-date-input">
+            <input class="modal-form-input" type="text" id="check-in-date" name="check-in-date" value="27 апреля 2020"
+              placeholder="Укажите дату" required>
+            <span class="error-message">Мы не можем отправить вас в прошлое.</span>
+            </div>
+
+          <label class="modal-form-label" for="check-out-date">Дата Выезда:</label>
+          <div class="check-out-date-input">
+            <input class="modal-form-input" type="text" id="check-out-date" name="check-out-date"
+              value="1 сентября 2023" placeholder="Укажите дату" required>
+            <span class="information-message">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+
+           <label class="modal-form-label" for="adults-amount">Взрослые:</label>
+          <div class="quantity-picker">
+            <button type="button" class="btn-minus" onclick="this.parentElement.querySelector('input').stepDown()">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
+              </svg>
+              <span class="visually-hidden">Уменьшить количество взрослых</span>
+            </button>
+            <input class="modal-input-guest-amount" id="adults-amount" type="number" name="adults-amount" min="1" max="99" value="2"
+              placeholder="2" inputmode="numeric" required>
+            <button type="button" class="btn-plus" onclick="this.parentElement.querySelector('input').stepUp()">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+              </svg>
+              <span class="visually-hidden">Увеличить количество взрослых</span>
+            </button>
+          </div>
+
+        <div class="modal-form-container-children">
+            <label class="modal-form-label-children" for="children-amount">Дети:</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                <svg class="tooltip-icon" width="16" height="16" role="img" aria-label="Информация" viewBox="0 0 20 20"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" fill="white" />
+                </svg>
+              </button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
+                будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </span>
+          </div>
+
+           <div class="quantity-picker">
+            <button type="button" class="btn-minus" onclick="this.parentElement.querySelector('input').stepDown()">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+              </svg>
+              <span class="visually-hidden">Уменьшить количество детей</span>
+            </button>
+            <input class="modal-input-guest-amount" type="number" name="children-amount" id="children-amount" min="1" max="99"
+              value="2" placeholder="1" inputmode="numeric" required>
+            <button type="button" class="btn-plus" onclick="this.parentElement.querySelector('input').stepUp()">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+              </svg>
+              <span class="visually-hidden">Увеличить количество детей</span>
+            </button>
+          </div>
+
+          <button class="secondary-button button modal-search-button" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
   </body>
 </html>
