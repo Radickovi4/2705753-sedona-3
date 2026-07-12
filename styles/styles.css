@@ -886,6 +886,8 @@ padding: 0;
 }
 
 .type {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: description;
   margin: 0;
 }
@@ -913,6 +915,9 @@ padding: 0;
 }
 
 .product-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -927,6 +932,8 @@ padding: 0;
 }
 
 .product-link-details {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -941,6 +948,8 @@ padding: 0;
 }
 
 .product-button {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
   font-family: PT Sans;
   font-weight: 700;
   text-decoration: none;
@@ -957,6 +966,8 @@ padding: 0;
 }
 
 .product-button-favorite {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
   font-family: PT Sans;
   font-weight: 700;
   text-decoration: none;
@@ -1003,6 +1014,8 @@ padding: 0;
 
 
 .catalog-hotel-stars {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
   background-image: url("../images/icon/star.svg");
   background-repeat: space no-repeat;
   background-size: 18px 17px;
@@ -1032,6 +1045,8 @@ padding: 0;
 }
 
 .catalog-hotel-raiting {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
