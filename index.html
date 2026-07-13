@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="navigation">
+    <header class="navigation" data-test="header">
       <a class="navigatoin-logo" href="index.html">
           <img class="logo-site" width="140" height="70"
           src="images/icons/logo-main.svg"
@@ -54,8 +54,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
-     <section class="hero">
+    <main class="main-index" data-test="main">
+     <section class="hero" data-test="hero">
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
     <img class="logo" src="images/welcome.svg" width="458" height="352" alt="приветсвие сайта седона">
      </section>
@@ -65,7 +65,7 @@
     <p class="description-block">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" data-test="advantages">
       <h2 class="visually-hidden"> Преимущества</h2>
       <ul class="advantages-list">
         <li class="advantages-item pictures">
@@ -108,7 +108,7 @@
     <div class="service">
      <ul class="service-list">
       <li class="service-item light-blue">
-      <div class="service-block">
+      <div class="service-block" data-test="service">
            <img src="images/icons/hotels.svg" alt="Иконка дома" width="75" height="72">
            <h4 class="service-heading">Жильё</h4>
            <p class="description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
@@ -130,13 +130,13 @@
        </li>
       </ul>
      </div>
-       <section class="interested">
+       <section class="interested" data-test="search">
         <h2 class="header-block-two">Заинтерисовались?</h2>
         <p class="description-block">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button-search" href="#">Поиск гостиницы в Седоне</a>
        </section>
 
-       <section class="subscribe sub-img">
+       <section class="subscribe sub-img" data-test="subscribe">
         <div class="subscribe-block">
           <h2 class="header-block-two">Подпишитесь на рассылку</h2>
           <p class="description-block"> Только полезная информация и никакого спама, честной бойскаутское!</p>
@@ -148,7 +148,7 @@
        </section>
       </main>
 
-      <footer class="main-footer">
+      <footer class="main-footer" data-test="footer">
           <div class="social-container">
           <ul class="social-list">
             <li class="social-item">
@@ -201,7 +201,7 @@
         </div>
       </footer>
 
-      <div class="modal-container">
+      <div class="modal-container modal-closed" dada-test="modal">
         <div class="modal modal-search">
            <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>

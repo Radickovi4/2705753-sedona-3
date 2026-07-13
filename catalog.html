@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header class="navigation">
+  <header class="navigation" data-test="header">
       <a class="navigatoin-logo" href="index.html">
           <img class="logo-site" width="140" height="70"
           src="images/icons/logo-main.svg"
@@ -55,8 +55,8 @@
       </nav>
     </header>
 
- <main>
-    <section class="head-main">
+ <main data-test="main">
+    <section class="head-main" data-test="filter">
         <h1 class="catalog-title">Гостиницы Седоны</h1>
         <ul class="catalog-navigation">
             <li class="catalog-navigation-item">
@@ -176,7 +176,7 @@
             </li>
         </ul>
     </section>
-    <section class="product">
+    <section class="product" data-test="catalog">
         <ul class="product-list">
             <li class="product-item">
                 <img class="product-img" src="images/hotel-1.jpg" alt="гостинаца Amara Resort & Spa." width="300" height="212">
@@ -260,7 +260,7 @@
     </ul>
    </section>
    </section>
-     <section class="subscribe">
+     <section class="subscribe" data-test="subscribe">
         <div class="subscribe-block">
           <h2 class="header-block-two">Подпишитесь на рассылку</h2>
           <p class="description-block"> Только полезная информация и никакого спама, честной бойскаутское!</p>
@@ -271,7 +271,7 @@
         </div>
        </section>
  </main>
-     <footer class="main-footer">
+     <footer class="main-footer" data-test="footer">
           <div class="social-container">
           <ul class="social-list">
             <li class="social-item">
