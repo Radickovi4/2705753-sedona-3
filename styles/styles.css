@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans";
   font-weight: 700;
   font-style: normal;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -28,6 +28,9 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -266,10 +269,16 @@ html {
   font-size: 18px;
   line-height: 21px;
   margin: 0;
+  color: #333333;
+}
+
+.description-header-two{
+  font-size: 22px;
 }
 
 .description-block {
   font-size: 22px;
+  color:#333333;
   line-height: 26px;
   margin: 0;
   font-style: normal;
@@ -324,7 +333,7 @@ html {
 
 .service-item {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   text-align: center;
   flex: 1;
 }
@@ -336,6 +345,8 @@ html {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  height: 100%;
+  box-sizing: border-box;
 
 }
 
@@ -354,7 +365,10 @@ html {
 }
 
 .button-search {
-
+  font-family: "PT Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
   margin: 54px auto 0;
   padding: 8px 50px;
   display: inline-block;
@@ -388,6 +402,7 @@ html {
   background-image: url("../images/subscribe.png");
   background-repeat: no-repeat;
   background-position: center;
+    background-size: cover;
   color: #ffffff;
 }
 
@@ -479,7 +494,7 @@ html {
 
 .header-button {
   text-align: center;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -618,7 +633,7 @@ html {
 }
 
 .contact-logo:active {
-  color: rgba(104, 162, 202, 0.)
+  color: rgba(117, 97, 87, 0.3)
 }
 
 .visually-hidden {
@@ -653,11 +668,12 @@ html {
   color: #ffffff;
   padding: 35px 70px 70px;
   margin-bottom: 50px;
-
+  min-height: 300px;
+  height: auto;
 }
 
 .catalog-title {
-  text-transform: capitalize;
+
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -681,34 +697,12 @@ html {
   height: 21px;
 }
 
-.catalog-navigation-link-home {
-  background-image: url(../images/icons/home.svg);
-  width: 15px;
-  background-repeat: no-repeat;
-  background-size: 13px 13px;
-  background-position: center;
-  display: block;
-  padding-bottom: 19px;
-
-}
-
-.catalog-navigation-link {
-  background-image: url(../images/icons/arrow-right.svg);
-  background-repeat: no-repeat;
-  background-size: 11px 11px;
-  background-position: right 106px center;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  display: block;
-  padding: 0 26px;
-}
-
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
-  height: 160px;
+
 }
+
 
 .catalog-filter-checkbox {
   border: none;
@@ -794,7 +788,7 @@ html {
   width: 103px;
   margin: 0;
   padding: 12px 20px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -808,7 +802,7 @@ html {
   width: 103px;
   margin: 0 2px;
   padding: 12px 20px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -902,9 +896,8 @@ html {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  max-width: 160px;
-  min-height: 48px;
   margin-left: 70px;
 }
 
@@ -968,6 +961,7 @@ html {
   -ms-grid-column: 1;
   grid-area: description;
   margin: 0;
+  color:#333333;
 }
 
 .product-list {
@@ -1007,6 +1001,7 @@ html {
   margin: 0;
   margin-right: 1px;
   justify-self: end;
+  color:#333333;
 }
 
 .product-link-details {
@@ -1041,7 +1036,7 @@ html {
 .product-button {
   -ms-grid-row: 5;
   -ms-grid-column: 3;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-weight: 700;
   text-decoration: none;
   color: #fff;
@@ -1074,7 +1069,7 @@ html {
 .product-button-favorite {
   -ms-grid-row: 5;
   -ms-grid-column: 3;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-weight: 700;
   text-decoration: none;
   color: #fff;
@@ -1090,8 +1085,9 @@ html {
 }
 
 .catalog-submit {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 16px;
+  font-weight: 700;
   line-height: 20px;
   font-style: normal;
   text-transform: uppercase;
@@ -1118,8 +1114,9 @@ html {
 }
 
 .catalog-reset {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 16px;
+  font-weight: 700;
   line-height: 20px;
   font-style: normal;
   text-transform: uppercase;
@@ -1182,6 +1179,7 @@ html {
   grid-area: rating;
   margin: 0;
   width: 95px;
+  color:#333333;
 }
 
 .pagination-block {
@@ -1202,32 +1200,7 @@ html {
   text-align: center;
 }
 
-.pagination-link-current {
-  background-color: #f2f2f2;
-  color: #000000;
-  text-decoration: none;
-  border-radius: 4px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  display: block;
-  padding: 12px 10px;
-  text-align: center;
-}
 
-.pagination-link {
-  text-decoration: none;
-  background: #82b3d3;
-  border-radius: 4px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  color: #ffffff;
-  display: block;
-  padding: 12px 10px;
-}
 
 .pagination-link:hover {
   background-color: #68A2CA;
@@ -1242,8 +1215,37 @@ html {
   color: rgba(242, 242, 242, 0.3);
 }
 
+
+.pagination-link,
+.pagination-link-current {
+  text-decoration: none;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 10px;
+  text-align: center;
+  min-width: 60px;
+  min-height: 60px;
+  box-sizing: border-box;
+}
+
+.pagination-link {
+  background: #82b3d3;
+  color: #ffffff;
+}
+
+.pagination-link-current {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
 .pagination-link-next {
-  background-color: transparent;
+  background-color: #ffffff;
   color: #000000;
   text-decoration: none;
   border-radius: 4px;
@@ -1251,14 +1253,27 @@ html {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px 10px;
   text-align: center;
+  min-width: 60px;
+  min-height: 60px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  cursor: default;
 }
+
 
 .dot {
   color: #000000;
   background-color: transparent;
+   border: none;
+  outline: none;
+  cursor: default;
+  user-select: none;
 }
 
 .dot:hover {
@@ -1432,6 +1447,10 @@ html {
 }
 
 .modal-search-button {
+  font-family: "PT Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
   grid-column: 1 / -1;
   margin-top: 25px;
   min-height: 60px;
@@ -1762,4 +1781,60 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .modal-input-guest-amount {
   -moz-appearance: textfield;
+}
+
+
+.catalog-navigation {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.catalog-navigation-item {
+  display: flex;
+  align-items: center;
+}
+
+.catalog-navigation-link-home {
+  background-image: url(../images/icons/home.svg);
+  width: 13px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+}
+
+.catalog-navigation-item:not(:first-child)::before {
+  content: "";
+  background-image: url(../images/icons/arrow-right.svg);
+  width: 7px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.catalog-navigation-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0;
+  cursor: pointer ;
+}
+
+.catalog-navigation-link:hover{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.catalog-navigation-link:hover{
+
+}
+
+.catalog-navigation-link:hover{
+
 }
