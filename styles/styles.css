@@ -1603,8 +1603,11 @@ html {
   background-color: transparent;
 }
 
-.quantity-picker button:hover svg,
-.quantity-picker button:active svg {
+.quantity-picker button:hover {
+  color: #000000;
+}
+
+.quantity-picker button:active {
   color: #000000;
 }
 
@@ -1618,7 +1621,7 @@ html {
   border-radius: 4px;
 }
 
-.quantity-picker button:disabled svg {
+.quantity-picker button:disabled {
   color: rgba(0, 0, 0, 0.3);
 }
 
