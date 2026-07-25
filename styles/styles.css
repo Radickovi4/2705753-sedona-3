@@ -1126,6 +1126,11 @@ html {
   color: rgba(255, 255, 255, 0.3)
 }
 
+.product-button:disabled{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #e5e5e5;
+}
+
 .product-button-favorite {
   -ms-grid-row: 5;
   -ms-grid-column: 3;
@@ -1142,6 +1147,24 @@ html {
   text-transform: uppercase;
   grid-area: favorites;
   width: 140px;
+}
+
+.product-button-favorite:hover{
+  background-color: #6c9e42;
+}
+
+.product-button-favorite:focus{
+  background-color: #6c9e42;
+}
+
+.product-button-favorite:active{
+  background-color: #7db54f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.product-button-favorite:disabled{
+  background-color: #e5e5e5;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-submit {
@@ -1861,7 +1884,9 @@ html {
   outline: 3px solid #83b3d3;
 }
 
-
+.control-label:disabled {
+background-color: rgba(255, 255, 255, 0.1);
+}
 
 .modal-input-guest-amount::-webkit-outer-spin-button,
 .modal-input-guest-amount::-webkit-inner-spin-button {
@@ -2044,4 +2069,26 @@ html {
 
 .footer-phone-link:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.control-input:disabled + .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: not-allowed;
+}
+
+.control-input:disabled:checked + .control-mark-radio::after {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.control-input:disabled ~ .control-label {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.control-input:disabled ~ .control-label:hover {
+  opacity: 0.5;
+}
+
+.control-input:disabled:focus + .control-mark {
+  outline: none;
 }
