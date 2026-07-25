@@ -324,31 +324,68 @@ html {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.service {
+  width: 100%;
+  min-height: 385px;
+}
+
 .service-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   width: 100%;
 }
 
 .service-item {
-  width: 400px;
   min-height: 385px;
+  display: flex;
   text-align: center;
-  flex: 1;
+  flex-direction: column;
 }
 
 .service-block {
-  text-align: center;
   padding: 80px 85px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  height: 100%;
+  flex-grow: 1;
   box-sizing: border-box;
+}
+
+.service-item .service-icon-hotel::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 72px;
+  background-image: url("../images/icons/hotels.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.service-item .service-icon-food::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 72px;
+  background-image: url("../images/icons/food.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.service-item .service-icon-souvenir::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 72px;
+  background-image: url("../images/icons/souvenir.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .service-heading {
@@ -914,6 +951,13 @@ html {
   flex-wrap: wrap;
   gap: 8px;
   margin-left: 70px;
+  flex-shrink: 0;
+  align-items: center;
+  max-width: 160px;
+}
+
+.display-item {
+  flex-shrink: 0;
 }
 
 .display-button {
@@ -925,6 +969,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
+  flex-shrink: 0;
 }
 
 .display-button:hover {
@@ -1686,15 +1731,16 @@ html {
 }
 
 .tooltip-text {
+  min-height: 143px;
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   display: none;
-  margin-top: 16px;
+  margin-top: 18px;
   width: 256px;
-  padding: 15px 20px 18px;
+  padding: 22px 18px 18px 22px;
   color: #ffffff;
   font-family: inherit;
   font-size: 16px;
@@ -1814,6 +1860,8 @@ html {
 .control-label:focus-visible {
   outline: 3px solid #83b3d3;
 }
+
+
 
 .modal-input-guest-amount::-webkit-outer-spin-button,
 .modal-input-guest-amount::-webkit-inner-spin-button {
